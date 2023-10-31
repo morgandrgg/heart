@@ -17,7 +17,7 @@ const LandingCarousel = ()=>{
                         </div>
                         <div className="absolute left-10 text-white my-48 w-2/3 bg-transparent p-4 z-10">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left">
-                                Let's be kind for children
+                                Let us be kind for children
                             </h1>
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
@@ -44,7 +44,7 @@ const LandingCarousel = ()=>{
                         </div>
                         <div className="absolute left-10 text-white my-48 w-2/3 bg-transparent p-4 z-10">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left">
-                                Let's be kind for children
+                                Let us be kind for children
                             </h1>
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
@@ -70,7 +70,7 @@ const LandingCarousel = ()=>{
                         </div>
                         <div className="absolute left-10 text-white my-48 w-2/3 bg-transparent p-4 z-10">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left">
-                                Let's be kind for children
+                                Let us be kind for children
                             </h1>
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada

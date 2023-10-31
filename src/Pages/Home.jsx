@@ -1,6 +1,35 @@
+import  React, {useEffect, useState} from "react";
+import LandingCarousel from "../Components/LandingCarousel/LandingCarousel";
+import DonationForm from "../Components/DonationForm/DonationForm.jsx";
+import Donate from '../assets/MainImages/1697107971004.jpg'
 import '../Styles/Home.css'
-import LandingCarousel from "../Components/LandingCarousel/LandingCarousel.jsx";
 const Home = ()=>{
+    const [count, setCount] = useState(0);
+
+    // Simulate counting up to your impact
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (count < 1000) {
+                setCount(count + 100);
+            } else {
+                clearInterval(interval);
+            }
+        }, 100);
+        return () => clearInterval(interval);
+    }, [count]);
+    const [counter, setCounter] = useState(0);
+
+    // Simulate counting up to your impact
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (counter < 1500) {
+                setCounter(counter + 50);
+            } else {
+                clearInterval(interval);
+            }
+        }, 150);
+        return () => clearInterval(interval);
+    }, [counter]);
     return(
         <section>
             <LandingCarousel/>
@@ -54,22 +83,49 @@ const Home = ()=>{
                     </div>
                 </div>
             </div>
-            <div className="z-30 relative items-center justify-center w-full h-full overflow-auto">
-                <div>
-                    <h1 className='text-xl text-center font-extrabold'>Our Impact</h1>
-
+            <div>
+                <div className="z-30 relative flex items-center justify-center w-full h-full overflow-auto">
+                    <div className="p-4 bg-white rounded-lg">
+                        <h1 className='text-4xl text-center font-extrabold text-indigo-600 mt-8 mb-3'>Our Impact</h1>
+                    </div>
+                </div>
+                <div className='flex md:flex-row flex-wrap justify-center  gap-8 mx-5'>
+                    <div className="p-6 w-72 bg-amber-200 rounded-lg shadow-2xl">
+                        <h1 className="text-2xl font-extrabold text-indigo-600">Child Sponsorship</h1>
+                        <div className="text-4xl font-bold text-gray-800 mt-4">{counter}+</div>
+                        <p className="text-sm text-gray-600 mt-2">Children Impacted</p>
+                    </div>
+                    <div className="p-6 w-72 bg-amber-200 rounded-lg shadow-2xl">
+                        <h1 className="text-2xl font-extrabold text-indigo-600">Child Sponsorship</h1>
+                        <div className="text-4xl font-bold text-gray-800 mt-4">{count}+</div>
+                        <p className="text-sm text-gray-600 mt-2">Children Impacted</p>
+                    </div>
+                    <div className="p-6 w-72 bg-amber-200 rounded-lg shadow-2xl">
+                        <h1 className="text-2xl font-extrabold text-indigo-600">Child Sponsorship</h1>
+                        <div className="text-4xl font-bold text-gray-800 mt-4">{counter}+</div>
+                        <p className="text-sm text-gray-600 mt-2">Children Impacted</p>
+                    </div>
+                    <div className="p-6 w-72 bg-amber-200 rounded-lg shadow-2xl">
+                        <h1 className="text-2xl font-extrabold text-indigo-600">Child Sponsorship</h1>
+                        <div className="text-4xl font-bold text-gray-800 mt-4">{count}+</div>
+                        <p className="text-sm text-gray-600 mt-2">Children Impacted</p>
+                    </div>
                 </div>
             </div>
-            <div className="h-screen flex justify-center items-center">
-                <div className="relative">
-                    <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-center border border-black rounded-full h-36 w-36">
-          <span className="inline-block transform rotate-45">
-            Heart of Generation
-          </span>
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white">
-                            {/*<img src="/logo.png" alt="Logo" className="w-12 h-12 m-2" />*/}
-                        </div>
-                    </h1>
+            <div className='bg-gradient-to-r from-rose-100 to-teal-100 mt-3 mb-3 pb-8'>
+                <div className="z-30 relative flex items-center justify-center w-full h-full overflow-auto">
+                    <div className="p-4  rounded-lg">
+                        <h1 className='text-4xl text-center font-extrabold text-indigo-600 mt-8 mb-3'>Make a Donation</h1>
+                    </div>
+                </div>
+                <div className="flex md:flex-row flex-wrap justify-center mx-5 bg-amber-50 shadow-2xl rounded-b-lg">
+                    <div className='w-96'>
+                        <DonationForm/>
+                    </div>
+                    <div className='align-middle'>
+                        <img src={Donate} alt={Donate} className='h-96 object-cover my-32'/>
+                        <div className="image-overlay"></div>
+                    </div>
                 </div>
             </div>
         </section>

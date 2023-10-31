@@ -1,0 +1,8 @@
+.wavy-border {
+    background-color: transparent; /* Set the background color to match the parent background */
+    clip-path: polygon(86% 90%, 100% 100%, 100% 0%, 0% 0%, 0% 25%, 0% 45%, 0% 58%, 0% 77%, 5% 81%, 15% 85%, 33% 89%, 50% 89%, 63% 87%, 76% 87%);
+}
+.wavy-border .wavy-nest {
+    background-color: rgba(253, 224, 71, 0.44);
+    padding-bottom: 100px;
+}
