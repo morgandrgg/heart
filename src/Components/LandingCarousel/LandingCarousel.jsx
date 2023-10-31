@@ -1,8 +1,8 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import card1 from '../../assets/AppImages/carousel-1.jpg'
-import card2 from '../../assets/AppImages/carousel-2.jpg'
-import card3 from '../../assets/AppImages/carousel-3.jpg'
+import card3 from '../../assets/MainImages/1697107986409.jpg'
+import card2 from '../../assets/MainImages/1697107880752.jpg'
+import card1 from '../../assets/MainImages/1697107999268.jpg'
 import '../../Styles/LandingCarousel.css'
 
 const LandingCarousel = ()=>{
@@ -15,7 +15,7 @@ const LandingCarousel = ()=>{
                             <img src={card1} alt={card1} className="w-fit h-fit min-h-screen object-cover" />
                             <div className="image-overlay"></div>
                         </div>
-                        <div className="absolute left-10 text-white my-48 w-2/3 bg-transparent p-4 z-10">
+                        <div className="absolute left-10 text-white my-48 w-2/3 bg-yellow-500 rounded-2xl p-4 z-10">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left">
                                 Let us be kind for children
                             </h1>
@@ -23,10 +23,10 @@ const LandingCarousel = ()=>{
                                 Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
                             </p>
                             <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
-                                <button className='bg-blue-500 text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
+                                <button className='bg-pink-900 hover:bg-pink-950 hover:text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                     Get Started
                                 </button>
-                                <button className='bg-blue-500 text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
+                                <button className='bg-pink-900 hover:bg-pink-950 hover:text-white px-6 py-2 z-50 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                     <a href="" className="btn btn-custom btn-play text-left" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                                         Watch Video
                                     </a>
@@ -42,7 +42,7 @@ const LandingCarousel = ()=>{
                             <img src={card2} alt={card2} className="w-fit h-fit min-h-screen object-cover" />
                             <div className="image-overlay"></div>
                         </div>
-                        <div className="absolute left-10 text-white my-48 w-2/3 bg-transparent p-4 z-10">
+                        <div className="absolute left-10 text-white my-48 w-2/3 bg-yellow-500 rounded-2xl p-4 z-10">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left">
                                 Let us be kind for children
                             </h1>
@@ -50,10 +50,10 @@ const LandingCarousel = ()=>{
                                 Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
                             </p>
                             <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
-                                <button className='bg-blue-500 text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
+                                <button className='bg-pink-900 hover:bg-pink-950 hover:text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                     Get Started
                                 </button>
-                                <button className='bg-blue-500 text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
+                                <button className='bg-pink-900 hover:bg-pink-950 hover:text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                     <a href="" className="btn btn-custom btn-play text-left" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                                         Watch Video
                                     </a>
@@ -68,7 +68,7 @@ const LandingCarousel = ()=>{
                             <img src={card3} alt={card3} className="w-fit h-fit min-h-screen object-cover" />
                             <div className="image-overlay"></div>
                         </div>
-                        <div className="absolute left-10 text-white my-48 w-2/3 bg-transparent p-4 z-10">
+                        <div className="absolute left-10 text-white my-48 w-2/3 bg-yellow-500 rounded-2xl p-4 z-10">
                             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left">
                                 Let us be kind for children
                             </h1>
@@ -76,10 +76,10 @@ const LandingCarousel = ()=>{
                                 Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
                             </p>
                             <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
-                                <button className='bg-pink-900 text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
+                                <button className='bg-pink-900 hover:bg-pink-950 hover:text-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                     Get Started
                                 </button>
-                                <button className='bg-yellow-100 hover:bg-pink-900 hover:text-white opacity-75 px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
+                                <button className='bg-pink-900 hover:bg-pink-950 hover:text-white  px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                     <a href="" className="btn btn-custom btn-play text-left" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                                         Watch Video
                                     </a>
