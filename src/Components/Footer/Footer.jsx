@@ -45,13 +45,13 @@ const Footer = ()=>{
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            1on1 Coaching
+                                            Location
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Company Review
+                                            PO BOX
                                         </a>
                                     </li>
 
@@ -63,37 +63,25 @@ const Footer = ()=>{
 
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            HR Consulting
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            SEO Optimisation
+                                            HQ
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Company</p>
+                                <p className="font-medium text-gray-900 dark:text-white">Join The team</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            About
+                                            Full Time Partnerships
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Meet the Team
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Accounts Review
+                                            Short Time Projects
                                         </a>
                                     </li>
                                 </ul>
@@ -104,10 +92,7 @@ const Footer = ()=>{
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a
-                                            href="#"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                                        >
+                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                                             Contact
                                         </a>
                                     </li>
@@ -127,48 +112,54 @@ const Footer = ()=>{
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Legal</p>
+                                <p className="font-medium text-gray-900 dark:text-white">Our Organization</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Accessibility
+                                            Our Story
                                         </a>
                                     </li>
-
+                                    </ul>
+                                    <ul className='mt-6 space-y-4 text-sm'>
+                                    <p className="font-medium text-gray-900 dark:text-white">Contact Us</p>
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Returns Policy
+                                            +2547 00 000 000
                                         </a>
                                     </li>
+                                        <li>
+                                            <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                                info@heart.com
+                                            </a>
+                                        </li>
 
-                                    <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Refund Policy
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Hiring Statistics
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Downloads</p>
+                                <p className="font-medium text-gray-900 dark:text-white">Give online</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            Marketing Calendar
+                                            Sponsor a Child
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            SEO Infographics
+                                            Give to missionary
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                            Food Programmes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                            Heart of Generation
                                         </a>
                                     </li>
                                 </ul>
