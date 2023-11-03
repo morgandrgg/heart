@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+
 const Error = ({ status }) => {
     const title = {
         404: "Page Not Found",
@@ -14,7 +15,7 @@ const Error = ({ status }) => {
 
     return (
         <>
-            <section className="h-screen bg-center bg-no-repeat bg-cover bg-gradient-to-r from-green-700 to-yellow-100 font-poppins dark:bg-gradient-to-r dark:from-gray-600 dark:to-gray-500">
+            <section className="h-screen bg-center bg-no-repeat bg-cover bg-gradient-to-r from-lighter-blue to-lighter-gray">
                 <div className="flex items-center h-full lg:h-screen">
                     <div className="justify-center max-w-6xl px-2 mx-auto text-center">
                         <div className="w-full p-4 bg-white lg:p-16 dark:bg-gray-700">
@@ -30,7 +31,7 @@ const Error = ({ status }) => {
                             <div className="mb-8">
                                 <div className="flex px-6 py-2 border border-gray-700 rounded-md dark:border-gray-400">
                                     <input type="text" className="w-full pr-4 text-sm text-gray-700 bg-white dark:text-gray-400 dark:bg-gray-700 placeholder-text-100" placeholder="Search..."/>
-                                    <button className="flex items-center text-gray-700 dark:text-gray-400 dark:hover:text-blue-300 hover:text-yellow-700">
+                                    <button className="flex items-center text-gray-700  dark:hover:text-blue-300 hover:text-yellow-700">
                                         <span className="mr-2 text-xs">Go</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -39,7 +40,7 @@ const Error = ({ status }) => {
                                 </div>
                             </div>
                             <div className="flex flex-wrap items-center justify-center">
-                                <Link to='/' className="px-8 py-4 text-xs font-medium text-gray-100 uppercase bg-green-700 rounded-full lg:text-base dark:bg-green-800 dark:hover:bg-green-900 hover:bg-green-800 md:w-auto">
+                                <Link to='/' className="px-8 py-4 text-xs font-medium text-gray-100 uppercase bg-light-blue rounded-full lg:text-base dark:bg-dark-blue dark:hover:bg-dark-blue hover:bg-dark-blue md:w-auto">
                                     Back to home
                                 </Link>
                             </div>

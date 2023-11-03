@@ -1,8 +1,9 @@
 import heartOfGenerationImage from '../assets/MainImages/1697108167093.jpg'
+
 const AboutUs=()=>{
     return(
         <div>
-            <section className="flex bg-stone-100 font-poppins dark:bg-gray-800 ">
+            <section className="flex  font-poppins dark:bg-dark-gray ">
                 <div className="justify-center mt-28 flex-1 px-7">
                     <div className="px-0 ml-10 md:text-center md:mb-0">
                         <h2 className="pb-2 text-2xl font-bold text-gray-800 md:text-4xl dark:text-gray-300">
@@ -17,7 +18,7 @@ const AboutUs=()=>{
                         <div className="flex-1 h-2 bg-blue-300">
                         </div>
                     </div>
-                    <div className="bg-gray-100  ">
+                    <div className="">
                         <div className="container mx-auto p-4">
                             <div className="flex flex-wrap justify-center">
                                 <div className="w-full md:w-1/2 p-4">

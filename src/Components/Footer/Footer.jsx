@@ -1,22 +1,24 @@
-import React from "react";
 import '../../Styles/Footer.css'
+import logo from '../../assets/MainImages/logo.png'
+import {Link} from "react-router-dom";
 
 const Footer = ()=>{
     return(<>
-            <footer className="bg-yellow-300 dark:bg-white">
-                <div className='justify-center bg-yellow-50  wavy-border'>
-                    <div className='justify-center bg-white wavy-nest '>
+            <footer className="bg-blue-950">
+                <div className='Home-module'></div>
+                <div className='justify-center  wavy-border'>
+                    <div className='justify-center bg-blue-300 dark:bg-pure-white wavy-nest'>
                         <div className="z-30 relative flex items-center justify-center md:flex-start w-full h-full overflow-auto">
                             <div className="p-4  rounded-lg">
-                                <h1 className='text-4xl text-center font-semibold text-indigo-500 mt-8 mb-3'>Follow Us</h1>
+                                <h1 className='text-4xl text-center font-semibold text-neutral-black mt-8 mb-3'>Follow Us</h1>
                             </div>
                         </div>
                         <div className='flex md:flex-row flex-wrap justify-center  gap-8 mx-5'>
-                            <div className='p-6 w-72 bg-amber-200 rounded-lg shadow-2xl'><h4>Stay Tuned</h4></div>
+                            <div className='p-6 w-72 bg-amber-50 rounded-lg font-semibold text-center shadow-xl'><h4>Stay Tuned</h4></div>
                             <div className='p-6 w-96 bg-amber-100 rounded-lg shadow-2xl'>
                                 <ul className="col-span-2 flex justify-center gap-6 lg:col-span-5 lg:justify-center">
                                     <li>
-                                        <a href="/" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="/" rel="noreferrer" target="_blank" className="text-blue-600 transition hover:opacity-75">
                                             <span className="sr-only">Facebook</span>
 
                                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -26,7 +28,7 @@ const Footer = ()=>{
                                     </li>
 
                                     <li>
-                                        <a href="/" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="/" rel="noreferrer" target="_blank" className="text-blue-600 transition hover:opacity-75 ">
                                             <span className="sr-only">Instagram</span>
 
                                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -36,7 +38,7 @@ const Footer = ()=>{
                                     </li>
 
                                     <li>
-                                        <a href="/" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="/" rel="noreferrer" target="_blank" className="text-blue-600 transition hover:opacity-75 ">
                                             <span className="sr-only">X</span>
 
                                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -46,70 +48,72 @@ const Footer = ()=>{
                                     </li>
                                 </ul>
                             </div>
-                            <div className='p-6 w-72 bg-amber-200 rounded-lg shadow-2xl'><h4>Stay Tuned</h4></div>
+                            <div className='p-6 w-72 bg-amber-50 rounded-lg font-semibold text-center shadow-xl'><h4>Stay Tuned</h4></div>
                         </div>
                     </div>
                 </div>
-                <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-                    <div className="lg:flex lg:items-start lg:gap-8">
-                        <div className="text-teal-600 dark:text-teal-300">
-                            {/*<svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
-                            {/*    <path d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z" fill="currentColor"/>*/}
-                            {/*</svg>*/}
-                        </div>
 
-                        <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+                <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+                    <div className="lg:flex md:items-start md:gap-8">
+                        <div className="mt-8 md:ml-12 grid grid-cols-2 gap-8 lg:mt-0 md:grid-cols-5 md:gap-y-16">
                             <div className="col-span-2">
                                 <div>
-                                    <h2 className="text-2xl font-bold text-gray-100 dark:text-white">
-                                        Get the latest news!
-                                    </h2>
-
-                                    <p className="mt-4 text-gray-50 dark:text-gray-400">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
-                                        cupiditate quae nam molestias.
-                                    </p>
+                                    <div className='ml-28 mt-2'>
+                                        <img src={logo} alt={logo} className=" h-20 w-24 bg-pure-white rounded-2xl object-contain md:h-40 md:w-52 md:object-contain md:bg-pure-white md:rounded-2xl"/>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="col-span-2 flex md:flex-row flex-wrap lg:col-span-3 lg:flex lg:items-end pb-2">
-                                <form className="w-full">
+                                <div className="md:mr-20">
+                                    <div>
+                                        <h2 className="text-2xl font-bold text-slate-color">
+                                            Get the latest news!
+                                        </h2>
+
+                                        <p className="mt-4 text-gray-50 dark:text-dark-slate">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
+                                            cupiditate quae nam molestias.
+                                        </p>
+                                    </div>
+                                </div>
+                                <form className="w-full md:mr-20">
                                     <label htmlFor="UserEmail" className="sr-only"> Email </label>
 
-                                    <div className="border border-gray-100 p-2 focus-within:ring dark:border-gray-800 sm:flex sm:items-center sm:gap-4">
+                                    <div className="border border-pure-white p-2  sm:flex sm:items-center sm:gap-4">
                                         <input type="email" id="UserEmail" placeholder="john@rhcp.com"
-                                            className="w-full border-none focus:border-transparent focus:ring-transparent dark:bg-gray-900 dark:text-white sm:text-sm"/>
+                                            className="w-full border-pure-white text-dark-gray h-16 pl-6  sm:text-sm"/>
 
-                                        <button className="mt-1 w-full bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
+                                        <button className="mt-1 w-full bg-blue-600 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-blue-700 sm:mt-0 sm:w-auto sm:shrink-0">
                                             Sign Up
                                         </button>
                                     </div>
                                 </form>
                             </div>
-                                                        <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Heart  Of Generation</p>
+                            <div className="col-span-2 sm:col-span-1">
+                                <p className="text-yellow-500 hover:opacity-75 font-bold ">Heart  Of Generation</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Location
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             PO BOX
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Accounts Review
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             HQ
                                         </a>
                                     </li>
@@ -117,17 +121,17 @@ const Footer = ()=>{
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Join The team</p>
+                                <p className="text-yellow-500 hover:opacity-75 font-bold">Join The team</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Full Time Partnerships
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Short Time Projects
                                         </a>
                                     </li>
@@ -135,23 +139,21 @@ const Footer = ()=>{
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Helpful Links</p>
+                                <p className="text-yellow-500 hover:opacity-75 font-bold">Helpful Links</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Contact
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                            FAQs
-                                        </a>
+                                        <Link to='/faq' className="text-pure-white hover:text-light-blue transition-all">FAQS</Link>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Live Chat
                                         </a>
                                     </li>
@@ -159,24 +161,24 @@ const Footer = ()=>{
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Our Organization</p>
+                                <p className="text-yellow-500 hover:opacity-75 font-bold">Our Organization</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Our Story
                                         </a>
                                     </li>
                                     </ul>
                                     <ul className='mt-6 space-y-4 text-sm'>
-                                    <p className="font-medium text-gray-900 dark:text-white">Contact Us</p>
+                                    <p className="text-yellow-500 hover:opacity-75 font-bold">Contact Us</p>
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             +2547 00 000 000
                                         </a>
                                     </li>
                                         <li>
-                                            <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                            <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                                 info@heart.com
                                             </a>
                                         </li>
@@ -185,27 +187,27 @@ const Footer = ()=>{
                             </div>
 
                             <div className="col-span-2 sm:col-span-1">
-                                <p className="font-medium text-gray-900 dark:text-white">Give online</p>
+                                <p className="text-yellow-500 hover:opacity-75 font-bold">Give online</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Sponsor a Child
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Give to missionary
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Food Programmes
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                             Heart of Generation
                                         </a>
                                     </li>
@@ -216,25 +218,25 @@ const Footer = ()=>{
 
                     <div className="mt-8 border-t border-gray-100 pt-8 dark:border-gray-800">
                         <div className="sm:flex sm:justify-between">
-                            <p className="text-xs text-gray-500 dark:text-gray-400">
-                                &copy; 2022. Company Name. All rights reserved.
+                            <p className="text-xs text-pure-white dark:text-gray-400">
+                                &copy; 2023. Company Name. All rights reserved.
                             </p>
 
                             <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                                 <li>
-                                    <a href="#" className="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                                    <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                         Terms & Conditions
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                                    <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                         Privacy Policy
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                                    <a href="#" className="text-pure-white hover:text-light-blue transition-all">
                                         Cookies
                                     </a>
                                 </li>

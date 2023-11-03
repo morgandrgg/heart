@@ -17,9 +17,9 @@ export const links = [
         submenu: true,
         sublinks: [
             {
-                Head: '',
+                Head: 'Who we are',
                 sublink: [
-                    { name: "Our Story", link: "/" },
+                    { name: "Our Story", link: "/ourStory" },
                     { name: "Contact us", link: "/" },
                 ],
             },

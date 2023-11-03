@@ -1,8 +1,19 @@
+:root {
+    --color-primary: #f1f5f9;
+    --color-secondary: #fe0000;
+    --color-1: #60a5fa;
+    --color-2: #2563eb;
+}
+.Home-module{
+    background: linear-gradient(to right,var(--color-secondary) 20%,var(--color-primary) 20% 50%,var(--color-1) 50% 80%,var(--color-2) 80%);
+    height: 3px;
+    width: 100%;
+}
 .wavy-border {
     background-color: transparent; /* Set the background color to match the parent background */
     clip-path: polygon(86% 90%, 100% 100%, 100% 0%, 0% 0%, 0% 25%, 0% 45%, 0% 58%, 0% 77%, 5% 81%, 15% 85%, 33% 89%, 50% 89%, 63% 87%, 76% 87%);
 }
 .wavy-border .wavy-nest {
-    background-color: rgba(253, 224, 71, 0.44);
+    /*background-color: rgba(253, 224, 71, );*/
     padding-bottom: 100px;
 }
