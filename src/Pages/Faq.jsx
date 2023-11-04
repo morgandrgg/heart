@@ -38,17 +38,17 @@ const handleExpandToggle = (index) => {
 return (
     <>
         <section className="font-sans mb-10">
-            <div className="py-10 md:py-24 lg:py-36 text-center bg-blue-100 dark:bg-gray-700 lg:block">
+            <div className="pt-24 md:py-24 lg:py-36 text-center bg-blue-100 dark:bg-gray-700 lg:block">
                 <div className="max-w-xl mx-auto mb-6">
                     <h1 className="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold dark:text-white">
                         Frequently Asked Questions
                     </h1>
-                    <p className="max-w-md mx-auto text-gray-500 dark:text-gray-400">
+                    <p className="max-w-md pb-0 md:pb-0 mx-auto text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quae quam nostrum harum non in at eaque
                         quibusdam eum ratione.
                     </p>
                 </div>
-                <form className="flex items-center max-w-2xl px-4 mx-auto md:px-6 mb-6">
+                <form className="flex items-center pb-24 md:pb-4 max-w-2xl px-4 mx-auto md:px-6 mb-10 md:mb-0">
                     <label htmlFor="voice-search" className="sr-only">
                         Search
                     </label>

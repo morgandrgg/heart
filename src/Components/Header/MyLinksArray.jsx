@@ -6,8 +6,8 @@ export const links = [
             {
                 Head: "Current openings",
                 sublink: [
-                    { name: "Full time partnerships", link: "/" },
-                    { name: "Short time projects", link: "/" },
+                    { name: "Full time partnerships", link: "/fullpartnership" },
+                    { name: "Short time projects", link: "/shortPartnership" },
                 ],
             }
         ],
@@ -20,7 +20,8 @@ export const links = [
                 Head: 'Who we are',
                 sublink: [
                     { name: "Our Story", link: "/ourStory" },
-                    { name: "Contact us", link: "/" },
+                    { name: "Our Team", link: "/ourteam" },
+                    { name: "Our Partners", link: "/" },
                 ],
             },
         ],

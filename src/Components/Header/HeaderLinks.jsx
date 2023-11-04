@@ -37,9 +37,9 @@ const HeaderLinks = () => {
                                             </h1>
 
                                             {mysublinks.sublink.map((slink,subSubIndex) => (
-                                                <li key={subSubIndex} className="text-sm text-medium-blue my-2.5 hover:text-lighter-gray">
+                                                <li key={subSubIndex} className="text-sm text-medium-blue my-2.5 ">
 
-                                                    <Link to={slink.link} className="hover:text-neutral-black hover:bg-pure-white">
+                                                    <Link to={slink.link} className="hover:text-neutral-black">
                                                         {slink.name}
                                                     </Link>
 

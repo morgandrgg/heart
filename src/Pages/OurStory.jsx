@@ -1,12 +1,48 @@
 import story from '../assets/MainImages/1696322544316.jpg'
+import React, {useEffect, useState} from "react";
 
 const OurStory = () =>{
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return(<>
         <div>
             <div className="bg-pure-white text-light-gray">
-                <div className="bg-lighter-gray text-pure-white pb-8 pt-16 text-center">
+                <div className="py-16 md:py-20 -mb-14">
+                    <div className={`transition-colors ${isScrolled ? 'bg-white text-neutral-black' : 'bg-primary-color bg-opacity-80 text-pure-white'} py-6 rounded-br-3xl rounded-bl-3xl`}>
+                        <div className="container mx-auto text-center">
+                            <h1 className="text-3xl font-sans font-bold text-left md:text-center ml-10 md:ml-0 ">Our Story</h1>
+                        </div>
+                        {isScrolled ? (
+                            (
+                                <div className="flex w-32 mt-1 ml-10 overflow-hidden rounded md:mx-auto md:mb-0">
+                                    <div className="flex-1 h-2 bg-blue-200">
+                                    </div>
+                                    <div className="flex-1 h-2 bg-blue-400">
+                                    </div>
+                                    <div className="flex-1 h-2 bg-blue-300">
+                                    </div>
+                                </div>
+                            )
+                        ) : null}
+                    </div>
                 </div>
-                <section className="container mx-auto py-12 px-8">
+                <section className="container mx-auto py-0 px-8">
                     <div className="flex flex-col md:flex-row md:space-x-8">
                         <div className="md:w-1/2">
                             <h2 className="text-4xl text-dark-gray text-center font-semibold mb-4">Our History</h2>
@@ -58,7 +94,7 @@ const OurStory = () =>{
                         </div>
                     </div>
                 </section>
-                <div className="bg-lighter-gray">
+                <div className="bg-pure-white">
                     <div className="container mx-auto">
                             <section className="items-center py-2 font-poppins dark:bg-gray-800">
                                 <div className="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">

@@ -89,7 +89,7 @@ const Home = ()=>{
             <div className=' pb-4'>
                 <div className="z-30 relative flex items-center justify-center w-full h-full overflow-auto">
                     <div className="p-4 rounded-lg">
-                        <h1 className='text-4xl text-center font-extrabold font-sans text-primary-color mt-8 mb-3'>Our Impact</h1>
+                        <h1 className='text-4xl text-center font-extrabold font-sans text-primary-color text-opacity-80 mt-8 mb-3'>Our Impact</h1>
                     </div>
                 </div>
                 <div className='flex md:flex-row flex-wrap justify-center mb-12 gap-8 mx-5'>

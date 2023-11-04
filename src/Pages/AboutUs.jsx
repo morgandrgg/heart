@@ -1,23 +1,48 @@
 import heartOfGenerationImage from '../assets/MainImages/1697108167093.jpg'
+import React, {useEffect, useState} from "react";
 
 const AboutUs=()=>{
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return(
         <div>
             <section className="flex  font-poppins dark:bg-dark-gray ">
-                <div className="justify-center mt-28 flex-1 px-7">
-                    <div className="px-0 ml-10 md:text-center md:mb-0">
-                        <h2 className="pb-2 text-2xl font-bold text-gray-800 md:text-4xl dark:text-gray-300">
-                            About Heart of Generation
-                        </h2>
+                {/*bg-primary-color bg-opacity-80 text-pure-white*/}
+                {/*bg-white text-neutral-black*/}
+                <div className="justify-center flex-1 py-16 md:py-20">
+                    <div className={`transition-colors ${isScrolled ? 'bg-white text-neutral-black' : 'bg-primary-color bg-opacity-80 text-pure-white'} py-6 rounded-br-3xl rounded-bl-3xl`}>
+                        <div className="container mx-auto text-center">
+                            <h1 className="text-3xl font-sans font-bold">About Heart of Generation</h1>
+                        </div>
+                        {isScrolled ? (
+                            (
+                                <div className="flex w-32 mt-1 ml-10 overflow-hidden rounded md:mx-auto md:mb-0">
+                                    <div className="flex-1 h-2 bg-blue-200">
+                                    </div>
+                                    <div className="flex-1 h-2 bg-blue-400">
+                                    </div>
+                                    <div className="flex-1 h-2 bg-blue-300">
+                                    </div>
+                                </div>
+                            )
+                        ) : null}
                     </div>
-                    <div className="flex w-32 mt-1 ml-10 overflow-hidden rounded md:mx-auto md:mb-0">
-                        <div className="flex-1 h-2 bg-blue-200">
-                        </div>
-                        <div className="flex-1 h-2 bg-blue-400">
-                        </div>
-                        <div className="flex-1 h-2 bg-blue-300">
-                        </div>
-                    </div>
+
                     <div className="">
                         <div className="container mx-auto p-4">
                             <div className="flex flex-wrap justify-center">
@@ -50,11 +75,11 @@ const AboutUs=()=>{
                     </div>
                     <div className="bg-gray-200 py-8 px-4">
                         <div className="max-w-3xl mx-auto text-center">
-                            <h2 className="text-3xl font-extrabold mb-4 text-indigo-600">Our Mission</h2>
+                            <h2 className="text-3xl font-extrabold mb-4 text-primary-color text-opacity-80">Our Mission</h2>
                             <p className="text-lg text-gray-700 text-justify mb-8">
                                 At Heart of Generation, our mission is to provide essential resources and support to underprivileged communities, fostering a sense of hope and empowerment to those in need.
                             </p>
-                            <h2 className="text-3xl font-extrabold mb-4 text-indigo-600">Our Vision</h2>
+                            <h2 className="text-3xl font-extrabold mb-4 text-primary-color text-opacity-80">Our Vision</h2>
                             <p className="text-lg text-justify text-gray-700">
                                 Our vision is to create a world where every individual has access to basic necessities and opportunities for personal growth, irrespective of their socio-economic background or geographic location.
                             </p>

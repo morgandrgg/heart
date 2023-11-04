@@ -22,8 +22,6 @@ const DonationForm = () => {
                 </div>
             </div>
             <div className="max-w-md mx-auto p-4 bg-lighter-blue shadow-md rounded-md relative">
-
-                {/*<h2 className="text-2xl font-extrabold text-indigo-600">Make a Donation</h2>*/}
                 <form>
                     <div className="mb-4">
                         <label htmlFor="donationAmount" className="block text-gray-600 font-medium">

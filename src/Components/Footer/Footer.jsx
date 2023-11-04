@@ -125,37 +125,11 @@ const Footer = ()=>{
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Full Time Partnerships
-                                        </a>
+                                        <Link to='/fullpartnership' className="text-pure-white hover:text-light-blue transition-all">Full Time Partnerships</Link>
                                     </li>
 
                                     <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Short Time Projects
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div className="col-span-2 sm:col-span-1">
-                                <p className="text-yellow-500 hover:opacity-75 font-bold">Helpful Links</p>
-
-                                <ul className="mt-6 space-y-4 text-sm">
-                                    <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Contact
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <Link to='/faq' className="text-pure-white hover:text-light-blue transition-all">FAQS</Link>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Live Chat
-                                        </a>
+                                        <Link to='/shortPartnership' className="text-pure-white hover:text-light-blue transition-all">Short Time Projects</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -165,20 +139,35 @@ const Footer = ()=>{
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Our Story
-                                        </a>
+                                        <Link to='/ourStory' className="text-pure-white hover:text-light-blue transition-all">Our Story</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/ourteam' className="text-pure-white hover:text-light-blue transition-all">Our team</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className="text-pure-white hover:text-light-blue transition-all">Our partners</Link>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="col-span-2 sm:col-span-1">
+                                <p className="text-yellow-500 hover:opacity-75 font-bold">Helpful links</p>
+
+                                <ul className="mt-6 space-y-4 text-sm">
+
+                                    <li>
+                                        <Link to='/faq' className="text-pure-white hover:text-light-blue transition-all">FAQS</Link>
                                     </li>
                                     </ul>
                                     <ul className='mt-6 space-y-4 text-sm'>
                                     <p className="text-yellow-500 hover:opacity-75 font-bold">Contact Us</p>
                                     <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            +2547 00 000 000
+                                        <a href="tel:+254700000000" target='_blank' className="text-pure-white hover:text-light-blue transition-all" rel="noreferrer">
+                                            +2547 00 00 00 00
                                         </a>
                                     </li>
                                         <li>
-                                            <a href="#" className="text-pure-white hover:text-light-blue transition-all">
+                                            <a href="mailto:info@heart.com"  className="text-pure-white hover:text-light-blue transition-all">
                                                 info@heart.com
                                             </a>
                                         </li>
@@ -219,7 +208,7 @@ const Footer = ()=>{
                     <div className="mt-8 border-t border-gray-100 pt-8 dark:border-gray-800">
                         <div className="sm:flex sm:justify-between">
                             <p className="text-xs text-pure-white dark:text-gray-400">
-                                &copy; 2023. Company Name. All rights reserved.
+                                &copy; {new Date().getFullYear()} Heart of Generation. All rights reserved.
                             </p>
 
                             <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
