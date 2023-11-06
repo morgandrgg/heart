@@ -68,12 +68,11 @@ const Footer = ()=>{
                                 <div className="md:mr-20">
                                     <div>
                                         <h2 className="text-2xl font-bold text-slate-color">
-                                            Get the latest news!
+                                            Sign Up for news letters
                                         </h2>
 
                                         <p className="mt-4 text-gray-50 dark:text-dark-slate">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
-                                            cupiditate quae nam molestias.
+                                           Get news feeds and upcoming events from Heart of Generations
                                         </p>
                                     </div>
                                 </div>
@@ -145,7 +144,7 @@ const Footer = ()=>{
                                         <Link to='/ourteam' className="text-pure-white hover:text-light-blue transition-all">Our team</Link>
                                     </li>
                                     <li>
-                                        <Link to='/' className="text-pure-white hover:text-light-blue transition-all">Our partners</Link>
+                                        <Link to='/ourpartners' className="text-pure-white hover:text-light-blue transition-all">Our partners</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -180,26 +179,18 @@ const Footer = ()=>{
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Sponsor a Child
-                                        </a>
+                                        <Link to='/givetomissionary' className="text-pure-white hover:text-light-blue transition-all">Give to missionary</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/foodProgrammes' className="text-pure-white hover:text-light-blue transition-all">Food Programmes</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/sponsorAchild' className="text-pure-white hover:text-light-blue transition-all">Sponsor a Child</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/heartofGeneartions' className="text-pure-white hover:text-light-blue transition-all">Heart of Generation</Link>
                                     </li>
 
-                                    <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Give to missionary
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Food Programmes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="text-pure-white hover:text-light-blue transition-all">
-                                            Heart of Generation
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>

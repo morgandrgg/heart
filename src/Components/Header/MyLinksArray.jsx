@@ -21,22 +21,22 @@ export const links = [
                 sublink: [
                     { name: "Our Story", link: "/ourStory" },
                     { name: "Our Team", link: "/ourteam" },
-                    { name: "Our Partners", link: "/" },
+                    { name: "Our Partners", link: "/ourpartners" },
                 ],
             },
         ],
     },
     {
-        name: "Give online",
+        name: "Our Programmes",
         submenu: true,
         sublinks: [
             {
                 Head: 'Programmes',
                 sublink: [
-                    { name: "Sponsor a Child", link: "/" },
-                    { name: "Give to missionary", link: "/" },
-                    { name: "Food programmes", link: "/" },
-                    { name: "Heart  Of Generation", link: "/" },
+                    { name: "Sponsor a Child", link: "/sponsorAchild" },
+                    { name: "Give to missionary", link: "/givetomissionary" },
+                    { name: "Food programmes", link: "/foodProgrammes" },
+                    { name: "Heart  Of Generation", link: "/heartofGeneartions" },
                 ],
             },
         ],

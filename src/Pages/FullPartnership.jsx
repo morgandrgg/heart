@@ -4,16 +4,26 @@ import {Link} from "react-router-dom";
 
 const reason = [
     {
-        description: 'Reason1',
+        description: 'Empowering Underprivileged Youth: Heart of Generations is dedicated to improving the lives of' +
+            ' underprivileged youth through various programs and initiatives. By partnering with us,' +
+            ' you contribute to the empowerment of young individuals who may not have had access ' +
+            'to education, mentorship, or essential resources.',
     },
     {
-        description: 'Reason2',
+        description: 'Community Engagement: We foster a sense of community and collaboration. Partnering with Heart of' +
+            ' Generations allows you to engage with ' +
+            'like-minded organizations, volunteers, and supporters who share a common passion for making a difference in ' +
+            'the lives of the less fortunate.',
     },
     {
-        description: 'Reason3',
+        description: 'Meaningful Impact: Our programs are designed to bring about meaningful and sustainable change in ' +
+            'the lives of disadvantaged youth. By partnering with us, you can directly contribute to initiatives that' +
+            ' have a lasting impact on the community, from educational support to healthcare and social development.',
     },
     {
-        description: 'Reason4',
+        description: 'Global Outreach: Heart of Generations has a wide-reaching network and a global perspective.' +
+            ' When you partner with us, you join an organization with an international presence, enabling you to extend' +
+            ' your philanthropic efforts and collaborate on a broader scale to address pressing global challenges.',
     }
 ]
 
@@ -36,27 +46,16 @@ const FullPartnership = ()=>{
         };
     }, []);
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        organization: '',
-        category: 'Corporate Partnership',
-        message: '',
-    });
+    const [expandedReasonIndex, setExpandedReasonIndex] = useState(-1);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
+    const toggleDescription = (index) => {
+        if (expandedReasonIndex === index) {
+            setExpandedReasonIndex(-1);
+        } else {
+            setExpandedReasonIndex(index);
+        }
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission here (e.g., send data to the server or perform any desired actions)
-        console.log(formData);
-    };
 
     return(
         <>
@@ -85,17 +84,23 @@ const FullPartnership = ()=>{
                         </h2>
                         <div className="p-8 rounded-lg w-96 md:w-1/2 px-3 -mt-10 md:-mt-0">
                             <ul>
-                                {reason.map((reasons, index) => (
+                                {reason.map((reason, index) => (
                                     <li key={index} className="py-2 text-light-gray border-t border-solid border-dark-slate last:border-b">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-color inline mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
-                                        </svg>
-                                        {reasons.description}
+                                        <div className="flex items-center cursor-pointer" onClick={() => toggleDescription(index)}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 text-primary-color inline mr-2 transform ${expandedReasonIndex === index ? "rotate-90" : "rotate-0"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                                            </svg>
+                                            {reason.description.split(":")[0]}:
+                                        </div>
+                                        {expandedReasonIndex === index && (
+                                            <div>{reason.description.split(":")[1]}</div>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     </div>
+                </div>
 
                     <div className="container mx-auto py-8">
                         <p className="text-2xl text-center font-semibold text-primary-color text-opacity-90 mb-6 px-8 md:px-64">
@@ -156,7 +161,6 @@ const FullPartnership = ()=>{
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     )
 }

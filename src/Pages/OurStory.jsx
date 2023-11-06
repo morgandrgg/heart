@@ -20,6 +20,73 @@ const OurStory = () =>{
         };
     }, []);
 
+    const historyData =[
+        {
+            description: 'Heart of Generations is a community-based organization with a heart dedicated to ' +
+                'providing food, hope, and opportunity to those in need. Founded on the principles of love and ' +
+                'compassion, our journey towards making a difference in the lives of underprivileged individuals is' +
+                ' a story worth telling.'
+        },
+        {
+            description: 'In the beginning, Heart of Generations emerged as a beacon of hope, focusing its efforts ' +
+                'on addressing the immediate needs of hungry families. We recognized the plight of those struggling to' +
+                ' put food on the table and made it our mission to offer assistance through the provision of food, ' +
+                'training, and scholarships.'
+        },
+        {
+            description: 'In the beginning, Heart of Generations emerged as a beacon of hope, focusing its efforts ' +
+                'on addressing the immediate needs of hungry families. We recognized the plight of those struggling to' +
+                ' put food on the table and made it our mission to offer assistance through the provision of food, ' +
+                'training, and scholarships.'
+        },
+        {
+            description: 'As our organization grew, so did our vision. We realized that we could achieve more by ' +
+                'forming a network, a collective of like-minded ministries, churches, and individuals who shared our ' +
+                'passion for making a positive impact. This network provided an avenue for partnerships that would ' +
+                'strengthen our ability to serve those in desperate poverty, particularly in the slums of Nairobi, Kenya.'
+        },
+        {
+            description: 'Today, Heart of Generations operates multiple ministries designed to meet the physical and ' +
+                'spiritual needs of those living in the most challenging circumstances. Our programs extend far beyond' +
+                ' the distribution of food. We work tirelessly to empower communities through education, mentorship, ' +
+                'and the provision of scholarships, ensuring that the cycle of poverty is broken.'
+        },
+        {
+            description: 'Our organization is a testament to the power of partnership. We wholeheartedly invite your' +
+                ' church or organization to join us in our mission to bring food to the hungry. Perhaps you are'+
+            'even interested in joining our team in Kenya. If you feel a calling to serve the people of Kenya,'+
+            'we want you to become a part of our dedicated team.'
+        },
+        {
+            description: 'Heart of Generations is a non-denominational mission agency with a global vision. Founded' +
+                ' with the purpose of bringing love and hope to unreached people in impoverished regions worldwide,' +
+                ' we strive to extend a helping hand to those in need.'
+        },
+        {
+            description: 'One of our significant focuses is assisting needy former residents who have been' +
+                ' reintegrated with guardians, parents, or next of kin. Through educational programs, we aim to provide' +
+                ' them with the skills and knowledge to build a better future.'
+        },
+        {
+            description: 'At Heart of Generations, our priorities are deeply rooted in the teachings of Christ.' +
+                ' We seek to "Flesh Out" the passion of Christ before a lost and dying world. Our approach is ' +
+                'deliberate - we major in those whom the world might consider minors. Our priority is to invest our' +
+                ' greatest resources and energies on the least, for we recognize that whenever we reach out to the ' +
+                'least, we do it for Jesus. As it is written, "I tell you the truth, whatever you did for one of the ' +
+                'least of these brothers and sisters of mine, you did for me" (Matthew 25:40).'
+        },
+        {
+            description: 'We invite you to join our team, where we have opportunities for full-time partnerships,' +
+                ' short-term projects, and the chance to make a difference online. You can sponsor a child, give to a' +
+                ' missionary, contribute to disaster relief efforts, support our food programs, and more.'
+        },
+        {
+            description: 'As an organization, our story is one of unwavering dedication and love for our fellow ' +
+                'humans. We are on a mission to make the world a better place, one act of kindness at a time. Feel' +
+                'free to contact us, and together, let us continue to bring hope and love to those who need it most.'
+        }
+    ]
+
     return(<>
         <div>
             <div className="bg-pure-white text-light-gray">
@@ -42,58 +109,23 @@ const OurStory = () =>{
                         ) : null}
                     </div>
                 </div>
-                <section className="container mx-auto py-0 px-8">
+                <div className="container mx-auto py-0 px-8">
                     <div className="flex flex-col md:flex-row md:space-x-8">
                         <div className="md:w-1/2">
                             <h2 className="text-4xl text-dark-gray text-center font-semibold mb-4">Our History</h2>
-                            <p className="text-lg mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                commodo, quam non fringilla viverra, purus metus tincidunt nisi, ut
-                                fermentum arcu velit id erat.
-                                Sed non aliquam ipsum, nec volutpat leo. Proin ut velit non dolor
-                                bibendum suscipit. In in leo et dui luctus euismod.
-                            </p>
-                            <p className="text-lg mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                commodo, quam non fringilla viverra, purus metus tincidunt nisi, ut
-                                fermentum arcu velit id erat.
-                                Sed non aliquam ipsum, nec volutpat leo. Proin ut velit non dolor
-                                bibendum suscipit. In in leo et dui luctus euismod.
-                            </p>
-                            <p className="text-lg mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                commodo, quam non fringilla viverra, purus metus tincidunt nisi, ut
-                                fermentum arcu velit id erat.
-                                Sed non aliquam ipsum, nec volutpat leo. Proin ut velit non dolor
-                                bibendum suscipit. In in leo et dui luctus euismod.
-                            </p>
-                            <p className="text-lg mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                commodo, quam non fringilla viverra, purus metus tincidunt nisi, ut
-                                fermentum arcu velit id erat.
-                                Sed non aliquam ipsum, nec volutpat leo. Proin ut velit non dolor
-                                bibendum suscipit. In in leo et dui luctus euismod.
-                            </p>
-                            <p className="text-lg mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                commodo, quam non fringilla viverra, purus metus tincidunt nisi, ut
-                                fermentum arcu velit id erat.
-                                Sed non aliquam ipsum, nec volutpat leo. Proin ut velit non dolor
-                                bibendum suscipit. In in leo et dui luctus euismod.
-                            </p>
-                            <p className="text-lg mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                commodo, quam non fringilla viverra, purus metus tincidunt nisi, ut
-                                fermentum arcu velit id erat.
-                                Sed non aliquam ipsum, nec volutpat leo. Proin ut velit non dolor
-                                bibendum suscipit. In in leo et dui luctus euismod.
-                            </p>
+                            {historyData.map((item, index) => (
+                                <p key={index} className={`text-lg mb-6 md:mb-0 -m-3 md:-m-0 text-justify md:w-full md:pr-8 ${item.description.length * 0.6 > 100 ? 'md:w-full' : ''}`}>
+                                    {item.description}
+                                </p>
+                            ))}
                         </div>
+
                         <div className="md:w-1/2">
-                            <img src={story} alt="Our Story" className="w-full h-auto rounded-lg"/>
+                            <img src={story} alt="Our Story" className="w-full h-auto rounded-lg" />
                         </div>
                     </div>
-                </section>
+                </div>
+
                 <div className="bg-pure-white">
                     <div className="container mx-auto">
                             <section className="items-center py-2 font-poppins dark:bg-gray-800">
@@ -230,7 +262,6 @@ const OurStory = () =>{
                                     </div>
                                 </div>
                             </section>
-                        {/*</div>*/}
                     </div>
                 </div>
             </div>
@@ -268,10 +299,6 @@ const OurStory = () =>{
                                 <span className="block pl-3 text-xs font-semibold text-blue-500 uppercase dark:text-blue-300">
                                     Chief Editor
                                 </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                     className="absolute right-0 w-20 h-20 rotate-180 bottom-4 opacity-10" viewBox="0 0 16 16">
-                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
-                                </svg>
                             </div>
                         </div>
                         <div className="relative mb-10 border-b-4 border-blue-500 ">
@@ -303,10 +330,6 @@ const OurStory = () =>{
                                 <span className="block pl-3 text-xs font-semibold text-blue-500 uppercase dark:text-blue-300">
                                     Chief Editor
                                 </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                     className="absolute right-0 w-20 h-20 rotate-180 bottom-4 opacity-10" viewBox="0 0 16 16">
-                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
-                                </svg>
                             </div>
                         </div>
                         <div className="relative mb-10 border-b-4 border-blue-500 ">
@@ -336,10 +359,6 @@ const OurStory = () =>{
                                 <span className="block pl-3 text-xs font-semibold text-blue-500 uppercase dark:text-blue-300">
                                     Chief Editor
                                 </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                     className="absolute right-0 w-20 h-20 rotate-180 bottom-4 opacity-10" viewBox="0 0 16 16">
-                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
-                                </svg>
                             </div>
                         </div>
                     </div>

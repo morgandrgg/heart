@@ -76,9 +76,11 @@ const Header = () => {
                     </li>
                     <HeaderLinks />
                     <div className='py-5'>
-                        <button className='bg-light-blue hover:bg-dark-blue  text-white  hover:text-white px-6 py-2 rounded-full'>
-                           <Link to='/donatenow'>Donate Now</Link>
-                        </button>
+                        <Link to='/donatenow'>
+                            <button className='bg-light-blue hover:bg-dark-blue  text-white  hover:text-white px-6 py-2 rounded-full'>
+                               Donate Now
+                            </button>
+                        </Link>
                     </div>
                 </ul>
             </div>

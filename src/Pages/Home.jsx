@@ -80,9 +80,9 @@ const Home = ()=>{
                         <p className="text-pure-white text-lg md:text-xl mb-6">
                             We have various opportunities to get involved, including full-time partnerships, short-term projects, and online giving options such as sponsoring a child.
                         </p>
-                        <button className="bg-pure-white hover:bg-lighter-gray hover:text-dark-blue text-light-blue px-6 py-2 rounded-full font-semibold text-lg">
-                            Join Us
-                        </button>
+                        <Link to='/fullpartnership' >
+                            <button className="bg-pure-white hover:bg-lighter-gray hover:text-dark-blue text-light-blue px-6 py-2 rounded-full font-semibold text-lg">Join Us</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -99,19 +99,19 @@ const Home = ()=>{
                         <p className="text-sm text-light-gray mt-2">Children Impacted</p>
                     </div>
                     <div className="p-6 w-72 bg-dark-slate rounded-lg shadow">
-                        <h1 className="text-2xl font-extrabold text-dark-gray">Child Sponsorship</h1>
+                        <h1 className="text-2xl font-extrabold text-dark-gray">Food Programmes</h1>
                         <div className="text-4xl font-bold text-medium-blue mt-4">{count}+</div>
-                        <p className="text-sm text-light-gray mt-2">Children Impacted</p>
+                        <p className="text-sm text-light-gray mt-2">Families Impacted</p>
                     </div>
                     <div className="p-6 w-72 bg-dark-slate rounded-lg shadow">
-                        <h1 className="text-2xl font-extrabold text-dark-gray">Child Sponsorship</h1>
+                        <h1 className="text-2xl font-extrabold text-dark-gray">Church Missionaries</h1>
                         <div className="text-4xl font-bold text-medium-blue mt-4">{counter}+</div>
-                        <p className="text-sm text-light-gray mt-2">Children Impacted</p>
+                        <p className="text-sm text-light-gray mt-2">Believers Impacted</p>
                     </div>
                     <div className="p-6 w-72 bg-dark-slate rounded-lg shadow">
-                        <h1 className="text-2xl font-extrabold text-dark-gray">Child Sponsorship</h1>
+                        <h1 className="text-2xl font-extrabold text-dark-gray">Training Programmes</h1>
                         <div className="text-4xl font-bold text-medium-blue mt-4">{counter}+</div>
-                        <p className="text-sm text-light-gray mt-2">Children Impacted</p>
+                        <p className="text-sm text-light-gray mt-2">Youths Impacted</p>
                     </div>
                 </div>
             </div>
