@@ -10,9 +10,7 @@ import foodProgramme7 from '../../assets/MainImages/1697107990420.jpg';
 import foodProgramme8 from '../../assets/MainImages/1697108082037.jpg';
 
 const Gallery = () => {
-    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
-    const galleryData = [
+       const galleryData = [
         { image: foodProgramme1, thumbnail: foodProgramme1 },
         { image: foodProgramme2, thumbnail: foodProgramme2 },
         { image: foodProgramme3, thumbnail: foodProgramme3 },
@@ -24,6 +22,8 @@ const Gallery = () => {
         // Add more gallery items as needed
     ];
 
+
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const handleThumbnailClick = (index) => {
         setSelectedImageIndex(index);
     };

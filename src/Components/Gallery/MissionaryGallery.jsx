@@ -24,10 +24,11 @@ const MissionaryGallery = () =>{
 
 
 
-    const [selectedImageIndex, setSelectedImageIndex] = useState([3]);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const handleThumbnailClick = (index) => {
         setSelectedImageIndex(index);
     };
+
     useEffect(() => {
         const selectors = document.querySelectorAll('.gallery__selector');
         const currentCount = document.querySelector('.current-count');
@@ -37,7 +38,8 @@ const MissionaryGallery = () =>{
                 currentCount.innerText = index + 1;
                 setSelectedImageIndex(index);
             });
-        })
+        });
+
         // Set the first input as checked
         selectors[0].checked = true;
         currentCount.innerText = 1;
@@ -61,10 +63,9 @@ const MissionaryGallery = () =>{
                             <label htmlFor={`img-${index + 1}`} className="gallery__thumb w-fit mt-64 md:mt-20">
                                 <img
                                     src={item.thumbnail}
-                                    alt=""
+                                    alt="" loading="lazy"
                                     className="h-20 md:h-24 w-32 md:w-24 overflow-x-scroll md:overflow-x-scroll object-cover"
-                                    onClick={() => handleThumbnailClick(index + 1)}
-                                    loading="lazy"
+                                    onClick={() => handleThumbnailClick(index)}
                                 />
                             </label>
                         </div>
