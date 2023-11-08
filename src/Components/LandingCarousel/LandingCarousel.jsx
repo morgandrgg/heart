@@ -7,9 +7,9 @@ import {Link} from "react-router-dom";
 
 const LandingCarousel = ()=>{
     return(
-        <div className='carousel-container overflow-y-scroll snap-y-mandatory'>
+        <div className='carousel-container '>
             <Carousel className=''   onSwipeMove showArrows={true} infiniteLoop={true} showStatus={true} showThumbs={false} autoPlay={true} transitionTime={1000} axis="horizontal"  interval={3000}>
-                <div className='overflow-y-scroll snap-y-mandatory'>
+                <div className=''>
                     <div className="carousel-item flex -mt-6">
                         <div className='relative'>
                             <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" loading="lazy" />

@@ -59,7 +59,7 @@ const Home = ()=>{
 
     return(
         <section>
-            <div className='overflow-y-scroll snap-y-mandatory'>
+            <div className=''>
              <LandingCarousel id="landing-carousel"/>
             </div>
             <div className='Home-module'></div>
