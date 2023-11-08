@@ -7,9 +7,9 @@ import {Link} from "react-router-dom";
 
 const LandingCarousel = ()=>{
     return(
-        <div className='carousel-container'>
-            <Carousel className='' showArrows={true} infiniteLoop={true} showStatus={false} showThumbs={false} autoPlay={true} transitionTime={1000} axis="horizontal" interval={3000}>
-                <div>
+        <div className='carousel-container overflow-y-scroll snap-y-mandatory'>
+            <Carousel className=''   onSwipeMove showArrows={true} infiniteLoop={true} showStatus={true} showThumbs={false} autoPlay={true} transitionTime={1000} axis="horizontal"  interval={3000}>
+                <div className='overflow-y-scroll snap-y-mandatory'>
                     <div className="carousel-item flex -mt-6">
                         <div className='relative'>
                             <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" loading="lazy" />
@@ -22,7 +22,7 @@ const LandingCarousel = ()=>{
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 In a world where inequality persists, it is our moral responsibility to extend a helping hand to those less fortunate.
                             </p>
-                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
+                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 items-start ">
                                 <Link to='/fullpartnership'>
                                     <button className='bg-blue-600 hover:bg-blue-700  hover:text-pure-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                         Become a partner
@@ -50,7 +50,7 @@ const LandingCarousel = ()=>{
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 In a world where inequality persists, it is our moral responsibility to extend a helping hand to those less fortunate.
                             </p>
-                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
+                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 items-start">
                                 <Link to='/fullpartnership'>
                                     <button className='bg-blue-600 hover:bg-blue-700  hover:text-pure-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                         Become a partner
@@ -79,7 +79,7 @@ const LandingCarousel = ()=>{
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 In a world that often demands toughness, let us be the guiding light of compassion and understanding for the little ones.
                             </p>
-                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
+                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 items-start ">
                                 <Link to='/fullpartnership'>
                                     <button className='bg-blue-600 hover:bg-blue-700  hover:text-pure-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                         Become a partner
@@ -107,7 +107,7 @@ const LandingCarousel = ()=>{
                             <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 text-justify overflow-x-hidden">
                                 In a world where inequality persists, it is our moral responsibility to extend a helping hand to those less fortunate.
                             </p>
-                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 ">
+                            <div className="carousel-btn flex md:flex-row flex-col gap-8 mt-8 items-start">
                                 <Link to='/fullpartnership'>
                                     <button className='bg-blue-600 hover:bg-blue-700  hover:text-pure-white px-6 py-2 rounded-full md:px-8 md:py-3 lg:px-10 lg:py-4'>
                                         Become a partner

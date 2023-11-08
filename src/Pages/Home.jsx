@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 
 const Home = ()=>{
     const [count, setCount] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
+
 
     // Simulate counting up to your impact
     useEffect(() => {
@@ -31,10 +33,35 @@ const Home = ()=>{
         }, 150);
         return () => clearInterval(interval);
     }, [counter]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const handleScrollToCarousel = () => {
+        const carousel = document.getElementById("landing-carousel");
+        if (carousel) {
+            window.scrollTo({
+                top: carousel.offsetTop,
+                behavior: "smooth",
+            });
+        }
+    };
+
+
     return(
         <section>
-
-            <LandingCarousel/>
+            <div className='overflow-y-scroll snap-y-mandatory'>
+             <LandingCarousel id="landing-carousel"/>
+            </div>
             <div className='Home-module'></div>
             <div className='flex md:flex-row flex-col bg-gradient-to-br from-dark-slate to-lighter-gray'>
                 <div className="container mx-auto text-light-gray p-8 md:p-16 text-center">
