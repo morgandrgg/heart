@@ -28,17 +28,6 @@ const Error = ({ status }) => {
                             <p className="mb-8 text-xs text-gray-600 lg:text-xl dark:text-gray-300">
                                 {description}
                             </p>
-                            <div className="mb-8">
-                                <div className="flex px-6 py-2 border border-gray-700 rounded-md dark:border-gray-400">
-                                    <input type="text" className="w-full pr-4 text-sm text-gray-700 bg-white dark:text-gray-400 dark:bg-gray-700 placeholder-text-100" placeholder="Search..."/>
-                                    <button className="flex items-center text-gray-700  dark:hover:text-blue-300 hover:text-yellow-700">
-                                        <span className="mr-2 text-xs">Go</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-                                            <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
                             <div className="flex flex-wrap items-center justify-center">
                                 <Link to='/' className="px-8 py-4 text-xs font-medium text-gray-100 uppercase bg-light-blue rounded-full lg:text-base dark:bg-dark-blue dark:hover:bg-dark-blue hover:bg-dark-blue md:w-auto">
                                     Back to home

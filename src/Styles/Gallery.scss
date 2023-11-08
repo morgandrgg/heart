@@ -1,5 +1,5 @@
 $max-img-width: 600px;
-$max-img-height: 400px;
+$max-img-height: 500px;
 
 img {
     max-width: 100%;
@@ -8,26 +8,31 @@ img {
 
 .gallery {
     display: flex;
-    margin: 10px auto;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: $max-img-width;
     position: relative;
     padding-top: $max-img-height / $max-img-width * 100%;
 
-    @media screen and (min-width: $max-img-width){
+    @media screen and (min-width: $max-img-width) {
         padding-top: $max-img-height;
     }
 
     &__img {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%; // Center vertically
+        left: 50%; // Center horizontally
+        transform: translate(-50%, -50%); // Center both horizontally and vertically
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        max-width: 100%; // Make sure it fits within the parent container
+        max-height: 420px; // Make sure it fits within the parent container
     }
 
     &__thumb {
-        padding-top: 6px;
-        margin: 6px;
+        padding-top: 2px;
+        margin: 130px 6px 0 6px;
         display: block;
     }
 
@@ -44,5 +49,67 @@ img {
                 box-shadow: 0 0 0 3px #0be2f6;
             }
         }
+    }
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1; /* Ensure it's above other content */
+
+    .current-count {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .total-count {
+        font-size: 1rem;
+        color: gray;
+    }
+    @media screen and (max-width: $max-img-width) {
+        overflow-x: auto; // Enable horizontal scrolling on smaller screens
+        align-items: center;
+        &__item {
+            min-width: 100%;
+        }
+    }
+}
+
+.gallery {
+    position: relative;
+}
+
+
+.gallery-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1; /* Ensure it's above other content */
+
+    .current-count {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .total-count {
+        font-size: 1rem;
+        color: gray;
     }
 }

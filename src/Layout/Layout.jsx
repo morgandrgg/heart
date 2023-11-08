@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation from react-router-dom
+import {useLocation} from "react-router-dom"; // Import useLocation from react-router-dom
 import Header from "../Components/Header/Header";
 import Routers from "../Routers/Routers";
 import Footer from "../Components/Footer/Footer";
@@ -14,20 +14,20 @@ const Layout = () => {
         <>
             {/* Conditionally render the header if not on an error page */}
             {!isErrorPage && (
-                <div>
+                <header>
                     <Header />
-                </div>
+                </header>
             )}
 
-            <div>
+            <main>
                 <Routers />
-            </div>
+            </main>
 
             {/* Conditionally render the footer if not on an error page */}
             {!isErrorPage && (
-                <div>
+                <footer>
                     <Footer />
-                </div>
+                </footer>
             )}
         </>
     );

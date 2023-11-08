@@ -2,6 +2,7 @@ import heroImage from '../assets/MainImages/1696322662250.jpg';
 import sponsorImage from '../assets/MainImages/1696322464715.jpg';
 import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
+import MissionaryGallery from "../Components/Gallery/MissionaryGallery.jsx";
 
 const GiveToMissionary= () =>{
     const [isScrolled, setIsScrolled] = useState(false);
@@ -112,7 +113,7 @@ const GiveToMissionary= () =>{
                 </div>
 
                 {/* Call to Action */}
-                <div className="bg-medium-blue bg-opacity-50 text-white py-16 text-center">
+                <div className="bg-medium-blue bg-opacity-50 text-white py-16 text-center -mb-14">
                     <h2 className="text-3xl font-semibold mb-4">Ready to Make a Difference?</h2>
                     <p className="text-lg mb-4 text-dark-gray">
                         Your support can transform motivate the present and the future missions. Sponsor a our missionary team
@@ -123,6 +124,9 @@ const GiveToMissionary= () =>{
                             Donate Now
                         </button>
                     </Link>
+                </div>
+                <div className='mb-6'>
+                    <MissionaryGallery/>
                 </div>
             </div>
         </>

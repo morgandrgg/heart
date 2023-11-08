@@ -33,7 +33,7 @@ const Header = () => {
             <div className='flex items-center font-medium justify-around'>
                 <div className='z-50 p-1 md:w-auto w-full flex justify-between'>
                     <Link to='/' className='pl-4'>
-                        <img src={Logo} alt={Logo} className='cursor-pointer h-16 w-16 object-contain' />
+                        <img src={Logo} alt={Logo} className='cursor-pointer h-16 w-16 object-contain' loading="lazy" />
                     </Link>
                     <div className='pt-3 pb-1'>
                         <button className='bg-light-blue hover:dark-blue  text-pure-white  hover:text-pure-white px-10 py-2 rounded-full md:hidden'>
@@ -74,7 +74,9 @@ const Header = () => {
                             </Link>
                         </div>
                     </li>
-                    <HeaderLinks />
+                    <li className='p-0'>
+                        <HeaderLinks />
+                    </li>
                     <div className='py-5'>
                         <Link to='/donatenow'>
                             <button className='bg-light-blue hover:bg-dark-blue  text-white  hover:text-white px-6 py-2 rounded-full'>

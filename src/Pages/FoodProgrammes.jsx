@@ -1,8 +1,9 @@
 import heroImage from '../assets/MainImages/1697107858037.jpg';
-import sponsorImage from '../assets/MainImages/1696322464715.jpg';
+import sponsorImage from '../assets/MainImages/1697108244317.jpg';
 import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
-import '../Styles/Gallery.scss'
+// import '../Styles/Gallery.scss'
+import FoodGallery from "../Components/Gallery/FoodGallery.jsx";
 
 const FoodProgrammes= () =>{
     const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +58,7 @@ const FoodProgrammes= () =>{
                 <div className="relative h-96 text-white flex items-center justify-center" style={{ backgroundImage: `url(${heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height:'260px' }}>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                     <div className="text-center relative z-10 w-screen">
-                        <div className={`mt-10 transition-colors ${isScrolled ? 'bg-white bg-opacity-80 text-neutral-black' : 'bg-primary-color bg-opacity-80 text-pure-white'} py-6 rounded-br-3xl rounded-bl-3xl`}>
+                        <div className={`mt-14 md:mt-10 transition-colors ${isScrolled ? 'bg-white bg-opacity-80 text-neutral-black' : 'bg-primary-color bg-opacity-80 text-pure-white'} py-6 rounded-br-3xl rounded-bl-3xl`}>
                             <div className="container mx-auto text-center">
                                 <h1 className="text-4xl font-bold">Support Our Food Programmes</h1>
                             </div>
@@ -75,7 +76,7 @@ const FoodProgrammes= () =>{
                             ) : null}
                         </div>
 
-                        <p className="text-lg mt-4">
+                        <p className="text-lg -mt-2 md:mt-2">
                             Through transparent and honest food donations we will be able to reach families and communities
                         </p>
                     </div>
@@ -86,7 +87,7 @@ const FoodProgrammes= () =>{
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Left Column: Sponsorship Information */}
                         <div>
-                            <img src={sponsorImage } alt="Sponsorship Image" className="w-full h-auto rounded-lg"/>
+                            <img src={sponsorImage } alt="Sponsorship Image" className="w-72 md:ml-48 md:mr-48 h-96 object-cover rounded-lg"/>
                         </div>
                         {/* Right Column: Sponsorship Image */}
                         <div>
@@ -122,6 +123,9 @@ const FoodProgrammes= () =>{
                             Donate Now
                         </button>
                     </Link>
+                </div>
+                <div className='mb-6'>
+                    <FoodGallery/>
                 </div>
             </div>
         </>

@@ -12,7 +12,7 @@ const LandingCarousel = ()=>{
                 <div>
                     <div className="carousel-item flex -mt-6">
                         <div className='relative'>
-                            <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" />
+                            <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" loading="lazy" />
                             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
                         </div>
                         <div className="text-image absolute left-10 text-white my-48 w-2/3 rounded-2xl p-4">
@@ -40,7 +40,7 @@ const LandingCarousel = ()=>{
                 <div>
                     <div className="carousel-item flex -z-10 -mt-6">
                         <div className='relative'>
-                            <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" />
+                            <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" loading="lazy" />
                             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
                         </div>
                         <div className="absolute left-10 text-white my-48 w-2/3 rounded-2xl p-4 z-10">
@@ -69,7 +69,7 @@ const LandingCarousel = ()=>{
                 <div>
                     <div className="carousel-item flex -z-10 -mt-6">
                         <div className='relative'>
-                            <img src={card2} alt={card2} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" />
+                            <img src={card2} alt={card2} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" loading="lazy" />
                             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
                         </div>
                         <div className="absolute left-10 text-white my-48 w-2/3  rounded-2xl p-4 z-10">
@@ -97,7 +97,7 @@ const LandingCarousel = ()=>{
                 <div>
                     <div className="carousel-item flex -mt-6">
                         <div className='relative'>
-                            <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" />
+                            <img src={card1} alt={card1} className="bg-opacity-25 w-fit-z-10 h-fit min-h-screen object-cover" loading="lazy" />
                             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
                         </div>
                         <div className="absolute left-10 text-white my-48 w-2/3 rounded-2xl p-4 z-10">

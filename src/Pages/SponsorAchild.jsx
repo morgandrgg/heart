@@ -2,6 +2,7 @@ import heroImage from '../assets/MainImages/1696322441843.jpg';
 import sponsorImage from '../assets/MainImages/1697108082037.jpg';
 import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
+import SponsorshipGallery from "../Components/Gallery/SponsorshipGallery.jsx";
 
 const SponsorAchild = () =>{
     const [isScrolled, setIsScrolled] = useState(false);
@@ -123,6 +124,9 @@ const SponsorAchild = () =>{
                             Donate Now
                         </button>
                     </Link>
+                </div>
+                <div className='mb-6'>
+                    <SponsorshipGallery/>
                 </div>
             </div>
         </>

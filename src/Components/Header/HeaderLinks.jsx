@@ -65,12 +65,12 @@ const HeaderLinks = () => {
                                     className="py-4 pl-7 font-semibold md:pr-0' pr-5' flex justify-between items-center md:pr-0 pr-5">
                                     {slinks.Head}
                                     <span className="text-xl md:mt-1 md:ml-2 inline">
-                                {`${heading === link.name ? "^" : "▼"}`}
+                                {`${heading === link.name ? "▼" : "^"}`}
                             </span>
                                 </h1>
 
                                 <div className={`hover:bg-dark-blue ${subHeading === slinks.Head ? "md:hidden" : "hidden"}`}>
-                                    {slinks.sublink.map((slink, mobileSubIndex) => (<li key={mobileSubIndex} className="py-3 pl-14">
+                                    {slinks.sublink.map((slink, mobileSubIndex) => (<li key={mobileSubIndex} className="mobile-menu-link py-3 pl-14">
                                         <Link to={slink.link} className='hover:bg-medium-blue p-3'>{slink.name}</Link>
                                     </li>))}
                                 </div>
